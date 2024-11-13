@@ -12,7 +12,7 @@ class _PasswordPageState extends State<PasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Password Validation'),
+        title: const Text('Password Validation'),
         centerTitle: true,
         backgroundColor: Colors.amber,
       ),
