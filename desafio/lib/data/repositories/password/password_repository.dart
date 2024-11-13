@@ -11,10 +11,11 @@ class PasswordRepository implements IPasswordRepository {
 
   @override
   Future<PasswordResponse?> generateRandom() async {
-    return await apiService.getRequest<PasswordResponse>(
+    final response = await apiService.getRequest<PasswordResponse>(
       Enpoints.generateRandom,
       (json) => PasswordResponse.fromJson(json),
     );
+    return response;
   }
 
   @override
